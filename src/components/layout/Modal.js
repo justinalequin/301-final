@@ -22,7 +22,16 @@ function ModalComp() {
       />
 
       <Modal isOpen={modalOpen}>
-        <button onClick={modalOpenFalse}>x</button>
+        <button
+          onClick={modalOpenFalse}
+          style={{
+            color: "rgba(250, 5, 35, .7)",
+            backgroundColor: "#05FADC",
+            borderRadius: "4px",
+          }}
+        >
+          X
+        </button>
         <ModalContent></ModalContent>
       </Modal>
     </div>
